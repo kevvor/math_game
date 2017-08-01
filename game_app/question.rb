@@ -1,18 +1,13 @@
 class Question
 
-  # def initialize ()
-  #   @@max_number = 20
-  # end
-
   def new_question
     @q1 = rand(1..20)
-    @q2 = rand(1..20)
+    @q2 = rand(1..2)
 
     puts "\nWhat's the sum of #{@q1} and #{@q2}?"
   end
 
   def verify_answer
-
     print "\n> "
 
     @response = gets.chomp.to_i
